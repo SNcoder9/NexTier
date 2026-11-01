@@ -28,7 +28,6 @@ export default function Navbar({ logo, user }) {
             <NavLink to="/" className={navLinkStyle}>Dashboard</NavLink>
             <NavLink to="/workout" className={navLinkStyle}>Workout</NavLink>
             <NavLink to="/diet" className={navLinkStyle}>Diet</NavLink>
-            <NavLink to="/ai-coach" className={navLinkStyle}>AI Coach</NavLink>
         </div>
 
         {/* Right: User Actions */}

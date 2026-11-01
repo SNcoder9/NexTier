@@ -19,19 +19,14 @@ function App() {
   return (
     <>
       <Navbar logo={logo} user={user}/>
-      <main style={{ 
-        // The gradient goes first, then the image
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(${background})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '100vh',
-        width: '100%'
-      }}>
-        <Routes>
-          <Route path='/' element={<Dashboard/>} /> 
-          <Route path='/workout' element={<Workout/>} />
-          <Route path='/diet' element={<Diet/>} />
-        </Routes>
+      <main className='w-screen h-screen'>
+        <div className='px-8 py-2.5'>
+          <Routes>
+            <Route path='/' element={<Dashboard user={user}/>} /> 
+            <Route path='/workout' element={<Workout/>} />
+            <Route path='/diet' element={<Diet/>} />
+          </Routes>
+        </div>
       </main>
     </>
   )

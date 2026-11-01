@@ -1,1 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Imperial+Script&display=swap');
 @import "tailwindcss";
+
+@theme{
+    --font-fascinate: "Fascinate", system-ui;
+    --font-imperial-script: "Imperial Script", cursive;
+}
