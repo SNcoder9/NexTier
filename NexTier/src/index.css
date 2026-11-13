@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Imperial+Script&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-fascinate: "Fascinate", system-ui;
+    --font-imperial-script: "Imperial Script", cursive;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+    background-color: #0f172a;
+}
+
+html[data-theme="dark"] [class~="bg-white/90"],
+html[data-theme="dark"] [class~="bg-white/80"],
+html[data-theme="dark"] [class~="bg-white/70"],
+html[data-theme="dark"] [class~="bg-white"] {
+    background-color: rgb(15 23 42 / 92%);
+}
+
+html[data-theme="dark"] [class~="bg-slate-50"],
+html[data-theme="dark"] [class~="bg-slate-50/50"],
+html[data-theme="dark"] [class~="bg-slate-100"],
+html[data-theme="dark"] [class~="bg-gray-50"] {
+    background-color: rgb(30 41 59 / 92%);
+}
+
+html[data-theme="dark"] [class~="text-slate-900"],
+html[data-theme="dark"] [class~="text-slate-800"],
+html[data-theme="dark"] [class~="text-slate-700"],
+html[data-theme="dark"] [class~="text-gray-800"] {
+    color: #e2e8f0;
+}
+
+html[data-theme="dark"] [class~="text-slate-600"],
+html[data-theme="dark"] [class~="text-slate-500"],
+html[data-theme="dark"] [class~="text-gray-600"],
+html[data-theme="dark"] [class~="text-gray-500"] {
+    color: #a7b3c5;
+}
+
+html[data-theme="dark"] [class~="border-slate-100"],
+html[data-theme="dark"] [class~="border-slate-200"],
+html[data-theme="dark"] [class~="border-gray-200"],
+html[data-theme="dark"] [class~="border-gray-300"] {
+    border-color: rgb(148 163 184 / 25%);
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] select {
+    color: #e2e8f0;
+}
+
+html[data-theme="dark"] input::placeholder {
+    color: #94a3b8;
+}
